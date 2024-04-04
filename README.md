@@ -27,10 +27,20 @@
 
     ```npm install react-bootstrap bootstrap```
 
-    added ```import 'bootstrap/dist/css/bootstrap.css';``` in the index.js file
+    added ```import 'bootstrap/dist/css/bootstrap.css';``` to the index.js file
 
 - Resolved git pull error (fatal: refusing to merge unrelated histories)
 
     ```$ git push [remote] [branch] --allow-unrelated-histories```
 
     ```$ git pull [remote] [branch] --allow-unrelated-histories```
+
+- Deployed to github pages
+
+    ```npm install gh-pages --save```
+
+    added ```"homepage": "[github page url]",``` to the package.json file.
+
+    added ```"predeploy": "npm run build", "deploy": "gh-pages -d build"``` to the "script" in the package.json file.
+
+    ```npm run deploy```
