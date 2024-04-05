@@ -1,4 +1,4 @@
-# RandomQuotes from freeCodeCamp
+# Practice Projects from freeCodeCamp
 
 ## General Information
 - Period : 2024-04-03 ~ 
