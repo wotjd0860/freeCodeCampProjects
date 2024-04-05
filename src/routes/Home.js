@@ -11,6 +11,9 @@ function Home() {
             <h2>
                 <Link to={`/markdownpreviewer`}>Markdown Previewer Practice</Link>
             </h2>
+            <h2>
+                <Link to={`/drummachine`}>Drum Machine Practice</Link>
+            </h2>
         </div>
     );
 }

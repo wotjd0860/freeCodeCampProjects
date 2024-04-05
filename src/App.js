@@ -1,3 +1,4 @@
+import DrumMachine from "./components/drumMachine";
 import MarkdownPreviewer from "./components/markdownPreviewer";
 import RandomQuotes from "./components/quotes";
 import Home from "./routes/Home";
@@ -14,6 +15,7 @@ function App() {
         <Route path="*" element={<Home/>}></Route>
         <Route path="/randomquotes" element={<RandomQuotes/>}></Route>
         <Route path="/markdownpreviewer" element={<MarkdownPreviewer/>}></Route>
+        <Route path="/drummachine" element={<DrumMachine/>}></Route>
       </Routes>
     </Router>
   );
