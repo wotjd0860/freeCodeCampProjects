@@ -44,3 +44,31 @@
     added ```"predeploy": "npm run build", "deploy": "gh-pages -d build"``` to the "script" in the package.json file.
 
     ```npm run deploy```
+
+### [2024-04-04]
+- Installed 'React Router'
+  
+    ```npm install react-router-dom```
+
+- Import react-router-dom in App.js
+
+    ```javascript
+    import {
+        BrowserRouter as Router,
+        Route,
+        Routes
+    } from "react-router-dom";
+    ```
+- Import and use "Link"
+
+    ```javascript
+    import { Link } from "react-router-dom";
+    ```
+
+- Installed 'react markdown' for exchange string to markdown string.
+
+    ```npm install react-markdown```
+
+- Installed 'remarkGfm'(Github Flavored Markdown)
+
+    ```npm install remark-gfm```
