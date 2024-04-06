@@ -75,3 +75,6 @@
 
 ### [2024-04-05]
 - Drum Machine Project added.
+
+### [2024-04-06]
+- Calculator Project started.

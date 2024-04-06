@@ -14,6 +14,9 @@ function Home() {
             <h2>
                 <Link to={`/drummachine`}>Drum Machine Practice</Link>
             </h2>
+            <h2>
+                <Link to={`/calculator`}>Calculator Practice</Link>
+            </h2>
         </div>
     );
 }
