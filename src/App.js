@@ -1,4 +1,5 @@
 import Calculator from "./components/calculator";
+import Clock from "./components/clock";
 import DrumMachine from "./components/drumMachine";
 import MarkdownPreviewer from "./components/markdownPreviewer";
 import RandomQuotes from "./components/quotes";
@@ -19,6 +20,7 @@ function App() {
         <Route path="/markdownpreviewer" element={<MarkdownPreviewer/>}></Route>
         <Route path="/drummachine" element={<DrumMachine/>}></Route>
         <Route path="/calculator" element={<Calculator/>}></Route>
+        <Route path="/clock" element={<Clock/>}></Route>
       </Routes>
     </Router>
   );
