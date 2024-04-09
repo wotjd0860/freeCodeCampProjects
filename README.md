@@ -80,6 +80,6 @@
 - Calculator Project started.
 - Created calculation codes (modification needed)
 
-### [2024-04-07]
+### [2024-04-07 ~ 2024-04-08]
 - 25 + 5 Clock Project page added.
-- 
+- Completed all functional codes.
