@@ -9,7 +9,7 @@
 <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
 <img src="https://img.shields.io/badge/Javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white">
 <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=React&logoColor=black">
-<img src="https://img.shields.io/badge/Bootstrap5-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white">
+<img src="https://img.shields.io/badge/tailwind css-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white">
 
 ## Learning content by date
 
@@ -83,3 +83,7 @@
 ### [2024-04-07 ~ 2024-04-08]
 - 25 + 5 Clock Project page added.
 - Completed all functional codes.
+
+### [2024-04-09]
+- Installed Tailwind CSS (https://tailwindcss.com/docs/guides/create-react-app)
+- Texted applying Tailwind CSS

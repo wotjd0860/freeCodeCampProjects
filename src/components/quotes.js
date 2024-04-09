@@ -22,8 +22,8 @@ function RandomQuotes() {
     }
 
     return (
-        <div id="quote-box" className="position-absolute top-50 start-50 translate-middle">
-            <div id="text">
+        <div id="quote-box">
+            <div id="text" className="text-xl">
                 {quote}
             </div>
             <div id="author">
