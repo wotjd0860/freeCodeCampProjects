@@ -87,3 +87,6 @@
 ### [2024-04-09]
 - Installed Tailwind CSS (https://tailwindcss.com/docs/guides/create-react-app)
 - Texted applying Tailwind CSS
+
+### [2024-04-10]
+- Tested some tailwind classes
