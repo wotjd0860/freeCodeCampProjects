@@ -90,3 +90,4 @@
 
 ### [2024-04-10]
 - Tested some tailwind classes
+- Added custom font
