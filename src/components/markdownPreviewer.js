@@ -65,15 +65,17 @@ And here. | Okay. | I think we get it.
     }
     
     return(
-        <div className="size-full">
-            <div className="mx-4 h-1/3">
+        <div className="max-h-full grid grid-rows-12">
+            <div className="mx-4 row-span-4">
                 <label htmlFor="editor" className="block mb-2 text-sm font-medium text-gray-900">Write here</label>
                 <textarea id="editor" onChange={handleChange} value={text} rows="12" className="block w-full text-sm font-medium text-gray-900 border-double border-2 border-gray-300" placeholder="Write your text here..."></textarea>
             </div>
             
-            <label htmlFor="preview" className="block mb-2 mx-4 text-sm font-medium text-gray-900">Markdown Preview</label>
-            <div className="mx-4 h-2/3 overflow-auto">
-                <ReactMarkdown id="preview" remarkPlugins={remarkGfm} children={preText} className="prose w-full border border-2 border-gray-300"></ReactMarkdown>
+            <div className="mx-4 row-span-8 max-h-full flex flex-col">
+                <label htmlFor="preview" className="block mb-2 text-sm font-medium text-gray-900">Markdown Preview</label>
+                <div className="overflow-auto">
+                    <ReactMarkdown id="preview" remarkPlugins={remarkGfm} children={preText} className="prose w-full max-h-max border-2 border-gray-300"></ReactMarkdown>
+                </div>
             </div>
         </div>
     );
