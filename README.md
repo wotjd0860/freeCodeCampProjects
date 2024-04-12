@@ -95,3 +95,7 @@
 ### [2024-04-11]
 - Prepare for using icon (https://docs.fontawesome.com/web/use-with/react/)
 - Random Quote Practice finished.
+- ```npm install -D @tailwindcss/typography``` for resolving issue in the Markdown Previewer Practice.
+1) Added ```require('@tailwindcss/typography')``` in "plugin" in the "tailwind.config.js" file.
+2) Added ```prose`` as one of the classNames of "ReactMarkdown".
+- Applied a custom style of tailwindcss typography.
