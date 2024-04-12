@@ -66,7 +66,8 @@ And here. | Okay. | I think we get it.
     
     return(
         <div>
-            <textarea id="editor" onChange={handleChange} value={text}/>
+            <label htmlFor="editor" className="block mb-2 text-sm font-medium text-gray-900">Write here</label>
+            <textarea id="editor" onChange={handleChange} value={text} rows="10" className="block w-full mx-4 mb-4 text-sm font-medium text-gray-900 border-double border-2 border-gray-300" placeholder="Write your text here..."></textarea>
             <div>
                 <ReactMarkdown id="preview" remarkPlugins={remarkGfm} children={preText}></ReactMarkdown>
             </div>

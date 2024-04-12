@@ -91,3 +91,7 @@
 ### [2024-04-10]
 - Tested some tailwind classes
 - Added custom font
+
+### [2024-04-11]
+- Prepare for using icon (https://docs.fontawesome.com/web/use-with/react/)
+- Random Quote Practice finished.
