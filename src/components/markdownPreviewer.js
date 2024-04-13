@@ -1,10 +1,13 @@
 import { useEffect, useState } from "react";
 import ReactMarkdown from "react-markdown";
+import { useNavigate } from "react-router-dom";
 import remarkGfm from "remark-gfm"; 
 
 function MarkdownPreviewer() {
     const [text, setText] = useState(``);
     const [preText, setPreText] = useState(``);
+
+    const navigate = useNavigate();
     
     useEffect(() => {
         /*
@@ -63,18 +66,26 @@ And here. | Okay. | I think we get it.
         setText(event.target.value);
         setPreText(event.target.value);
     }
+
+    function homeBtn() {
+        navigate(-1);
+    }
     
     return(
         <div className="max-h-full grid grid-rows-12">
+            <div className="mx-4 row-span-1">
+                <button onClick={homeBtn} className="absolute top-4 left-4 align-middle text-center w-20 rounded-xl bg-black text-white">Home</button>
+            </div>
+
             <div className="mx-4 row-span-4">
                 <label htmlFor="editor" className="block mb-2 text-sm font-medium text-gray-900">Write here</label>
                 <textarea id="editor" onChange={handleChange} value={text} rows="12" className="block w-full text-sm font-medium text-gray-900 border-double border-2 border-gray-300" placeholder="Write your text here..."></textarea>
             </div>
             
-            <div className="mx-4 row-span-8 max-h-full flex flex-col">
+            <div className="mx-4 mb-4 row-span-7 max-h-full flex flex-col">
                 <label htmlFor="preview" className="block mb-2 text-sm font-medium text-gray-900">Markdown Preview</label>
-                <div className="overflow-auto">
-                    <ReactMarkdown id="preview" remarkPlugins={remarkGfm} children={preText} className="prose w-full max-h-max border-2 border-gray-300"></ReactMarkdown>
+                <div className="overflow-auto border-2 border-gray-300">
+                    <ReactMarkdown id="preview" remarkPlugins={remarkGfm} children={preText} className="prose w-full max-h-max"></ReactMarkdown>
                 </div>
             </div>
         </div>

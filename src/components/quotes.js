@@ -17,6 +17,10 @@ function RandomQuotes() {
     const navigate = useNavigate();
 
     useEffect( () => {
+        setRendomNumber( Math.floor(Math.random() * 102) );
+    }, []);
+
+    useEffect( () => {
         setQuote(quotes[randomNumber].quote);
         setAuthor(quotes[randomNumber].author);
     }, [randomNumber]);
