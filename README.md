@@ -100,5 +100,5 @@
 2) Added ```prose`` as one of the classNames of "ReactMarkdown".
 - Applied a custom style of tailwindcss typography.
 
-### [2024-04-12]
-- Drum Machine Practice css adding started
+### [2024-04-12 ~ 2024-04-13]
+- Drum Machine Practice finished

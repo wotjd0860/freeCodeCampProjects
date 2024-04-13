@@ -10,9 +10,6 @@ function MarkdownPreviewer() {
     const navigate = useNavigate();
     
     useEffect(() => {
-        /*
-        variable 'initialMarkdown' must not include 'tab' because there may be unexpected format error in markdown.
-        */
         const initialMarkdown = `
 # Welcome to my React Markdown Previewer!
 
