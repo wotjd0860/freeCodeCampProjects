@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/freeCodeCampProjects/static/css/main.b4c71a53.css",
-    "main.js": "/freeCodeCampProjects/static/js/main.8658116c.js",
+    "main.css": "/freeCodeCampProjects/static/css/main.fa0685a0.css",
+    "main.js": "/freeCodeCampProjects/static/js/main.76e1187a.js",
     "static/media/Caveat-VariableFont_wght.ttf": "/freeCodeCampProjects/static/media/Caveat-VariableFont_wght.31f0a02d84d42627c894.ttf",
     "static/media/bg-quotes.jpg": "/freeCodeCampProjects/static/media/bg-quotes.53c26d33b6935ac9a337.jpg",
     "static/media/bg-clock.jpg": "/freeCodeCampProjects/static/media/bg-clock.b1de506968b05952cc79.jpg",
@@ -9,11 +9,11 @@
     "static/media/bg-calculator.jpg": "/freeCodeCampProjects/static/media/bg-calculator.384cfb26b3f77782f1a0.jpg",
     "static/media/bg-preview.png": "/freeCodeCampProjects/static/media/bg-preview.20abfd20b75a752ca40b.png",
     "index.html": "/freeCodeCampProjects/index.html",
-    "main.b4c71a53.css.map": "/freeCodeCampProjects/static/css/main.b4c71a53.css.map",
-    "main.8658116c.js.map": "/freeCodeCampProjects/static/js/main.8658116c.js.map"
+    "main.fa0685a0.css.map": "/freeCodeCampProjects/static/css/main.fa0685a0.css.map",
+    "main.76e1187a.js.map": "/freeCodeCampProjects/static/js/main.76e1187a.js.map"
   },
   "entrypoints": [
-    "static/css/main.b4c71a53.css",
-    "static/js/main.8658116c.js"
+    "static/css/main.fa0685a0.css",
+    "static/js/main.76e1187a.js"
   ]
 }
