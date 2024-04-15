@@ -41,7 +41,7 @@ function RandomQuotes() {
 
     return (
         <div id="quote-box" style={{backgroundColor: `${color}`}} className="content-center min-h-full transition-color duration-300">
-            <button id="new-quote" onClick={homeBtn} className="absolute top-4 left-4 align-middle text-center w-20 rounded-xl bg-black text-white">Home</button>
+            <button onClick={homeBtn} className="absolute top-4 left-4 align-middle text-center w-20 rounded-xl bg-black text-white">Home</button>
 
             <div className="content-stretch max-w-xl min-h-80 rounded-md bg-white m-auto grid grid-rows-5">
                 <div id="text" style={{fontFamily: "Caveat", fontWeight: "bold"}} className="text-3xl text-center content-center m-4 row-span-4">

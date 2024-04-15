@@ -105,3 +105,7 @@
 
 ### [2024-04-14]
 - Applied some css on the Calculator Practice
+
+### [2024-04-15]
+- Finished Calculator Practice
+- Started Clock Practice

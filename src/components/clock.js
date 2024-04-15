@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 function Clock() {
     const [breakLength, setBreakLength] = useState(5);
@@ -8,6 +9,25 @@ function Clock() {
     const [seconds, setSeconds] = useState(0);
     const [startStop, setStartStop] = useState(false);
     const [intervalID, setIntervalID] = useState();
+
+    const navigate = useNavigate();
+
+    useEffect( () => {
+        if(startStop) {
+            const id = setInterval( () => {
+                setSeconds( (seconds) => seconds - 1);
+            }, 1000 );
+            setIntervalID(id);
+        } else {
+            clearInterval(intervalID);
+        }
+    }, [startStop]);
+    useEffect( () => {
+        if (seconds < 0) {
+            setMinutes( (minutes) => minutes - 1);
+            setSeconds(59);
+        }
+    }, [seconds]);
 
     function clickedIncDect(event) {
         if(!startStop) {
@@ -50,45 +70,39 @@ function Clock() {
     function clickedStartStop() {
         setStartStop( (startStop) => !startStop);
     }
-    useEffect( () => {
-        if(startStop) {
-            const id = setInterval( () => {
-                setSeconds( (seconds) => seconds - 1);
-            }, 1000 );
-            setIntervalID(id);
-        } else {
-            clearInterval(intervalID);
-        }
-    }, [startStop]);
-    useEffect( () => {
-        if (seconds < 0) {
-            setMinutes( (minutes) => minutes - 1);
-            setSeconds(59);
-        }
-    }, [seconds]);
+
+    function homeBtn() {
+        navigate(-1);
+    }
 
     return (
-        <div>
-            <h1>25 + 5 Clock</h1>
-            <div id="break-label">
-                <h3>Break Length</h3>
-                <button id="break-decrement" onClick={clickedIncDect}>down</button>
-                <div id="break-length">{breakLength}</div>
-                <button id="break-increment" onClick={clickedIncDect}>up</button>
-            </div>
-            <div id="session-label">
-                <h3>Session Length</h3>
-                <button id="session-decrement" onClick={clickedIncDect}>down</button>
-                <div id="session-length">{sessionLength}</div>
-                <button id="session-increment" onClick={clickedIncDect}>up</button>
-            </div>
-            <div id="time-label">
-                <h2>Session</h2>
-                <div id="time-left">
-                    {String(minutes).padStart(2, "0")}:{String(seconds).padStart(2, "0")}
+        <div className="size-full flex items-center justify-center place-items-center">
+            <button onClick={homeBtn} className="absolute top-4 left-4 align-middle text-center w-20 rounded-xl bg-black text-white">Home</button>
+
+            <div className="flex flex-wrap items-center justify-center place-items-center size-fit border">
+                <div id="title" className="">
+                    <h1>25 + 5 Clock</h1>
                 </div>
-                <button id="start_stop" onClick={clickedStartStop}>start/stop</button>
-                <button id="reset" onClick={clickedReset}>reset</button>
+                <div id="break-label">
+                    <h3>Break Length</h3>
+                    <button id="break-decrement" onClick={clickedIncDect}>down</button>
+                    <div id="break-length">{breakLength}</div>
+                    <button id="break-increment" onClick={clickedIncDect}>up</button>
+                </div>
+                <div id="session-label">
+                    <h3>Session Length</h3>
+                    <button id="session-decrement" onClick={clickedIncDect}>down</button>
+                    <div id="session-length">{sessionLength}</div>
+                    <button id="session-increment" onClick={clickedIncDect}>up</button>
+                </div>
+                <div id="time-label">
+                    <h2>Session</h2>
+                    <div id="time-left">
+                        {String(minutes).padStart(2, "0")}:{String(seconds).padStart(2, "0")}
+                    </div>
+                    <button id="start_stop" onClick={clickedStartStop}>start/stop</button>
+                    <button id="reset" onClick={clickedReset}>reset</button>
+                </div>
             </div>
         </div>
     );
