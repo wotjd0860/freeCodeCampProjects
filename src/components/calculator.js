@@ -98,43 +98,33 @@ function Calculator() {
     }
 
     return (
-        <div>
-            <div id="display">
+        <div className="grid grid-rows-5 grid-cols-4 place-items-center size-fit border">
+            <div id="display" className="col-span-4 flex items-center justify-center w-64 h-16 border">
                 {display}
                 {result}
             </div>
-            <div id="calculator">
-                <div className="row">
-                    <div id="clear" className="col-6" onClick={btnClicked}>AC</div>
-                    <div id="divide" className="col-3" onClick={btnClicked}>/</div>
-                    <div id="multiply" className="col-3" onClick={btnClicked}>*</div>
-                </div>
-                <div className="row">
-                    <div id="seven" className="col-3" onClick={btnClicked}>7</div>
-                    <div id="eight" className="col-3" onClick={btnClicked}>8</div>
-                    <div id="nine" className="col-3" onClick={btnClicked}>9</div>
-                    <div id="substract" className="col-3" onClick={btnClicked}>-</div>
-                </div>
-                <div className="row">
-                    <div id="four" className="col-3" onClick={btnClicked}>4</div>
-                    <div id="five" className="col-3" onClick={btnClicked}>5</div>
-                    <div id="six" className="col-3" onClick={btnClicked}>6</div>
-                    <div id="add" className="col-3" onClick={btnClicked}>+</div>
-                </div>
-                <div className="row">
-                    <div className="col-9">
-                        <div className="row">
-                            <div id="one" className="col-4" onClick={btnClicked}>1</div>
-                            <div id="two" className="col-4" onClick={btnClicked}>2</div>
-                            <div id="three" className="col-4" onClick={btnClicked}>3</div>
-                        </div>
-                        <div className="row">
-                            <div id="zero" className="col-8" onClick={btnClicked}>0</div>
-                            <div id="decimal" className="col-4" onClick={btnClicked}>.</div>
-                        </div>
-                    </div>
-                    <div id="equals" className="col-3" onClick={btnClicked}>=</div>
-                </div>
+            <div id="calculator" className="col-span-4 row-span-4 grid grid-rows-5 grid-cols-4 size-fit border">
+                <div id="clear" className="col-span-2 flex items-center justify-center w-32 h-16 border" onClick={btnClicked}>AC</div>
+                <div id="divide" className="col-span-1 flex items-center justify-center size-16 border" onClick={btnClicked}>/</div>
+                <div id="multiply" className="col-apsn-1 flex items-center justify-center size-16 border" onClick={btnClicked}>*</div>
+
+                <div id="seven" className="col-span-1 flex items-center justify-center size-16 border" onClick={btnClicked}>7</div>
+                <div id="eight" className="col-span-1 flex items-center justify-center size-16 border" onClick={btnClicked}>8</div>
+                <div id="nine" className="col-span-1 flex items-center justify-center size-16 border" onClick={btnClicked}>9</div>
+                <div id="substract" className="col-span-1 flex items-center justify-center size-16 border" onClick={btnClicked}>-</div>
+
+                <div id="four" className="col-span-1 flex items-center justify-center size-16 border" onClick={btnClicked}>4</div>
+                <div id="five" className="col-span-1 flex items-center justify-center size-16 border" onClick={btnClicked}>5</div>
+                <div id="six" className="col-span-1 flex items-center justify-center size-16 border" onClick={btnClicked}>6</div>
+                <div id="add" className="col-span-1 flex items-center justify-center size-16 border" onClick={btnClicked}>+</div>
+
+                <div id="one" className="col-span-1 flex items-center justify-center size-16 border" onClick={btnClicked}>1</div>
+                <div id="two" className="col-span-1 flex items-center justify-center size-16 border" onClick={btnClicked}>2</div>
+                <div id="three" className="col-span-1 flex items-center justify-center size-16 border" onClick={btnClicked}>3</div>
+                <div id="equals" className="col-span-1 row-span-2 flex items-center justify-center w-16 h-32 border" onClick={btnClicked}>=</div>
+
+                <div id="zero" className="col-span-2 flex items-center justify-center w-32 h-16 border" onClick={btnClicked}>0</div>
+                <div id="decimal" className="col-span-1 flex items-center justify-center size-16 border" onClick={btnClicked}>.</div>
             </div>
         </div>
     );

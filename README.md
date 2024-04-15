@@ -102,3 +102,6 @@
 
 ### [2024-04-12 ~ 2024-04-13]
 - Drum Machine Practice finished
+
+### [2024-04-14]
+- Applied some css on the Calculator Practice
