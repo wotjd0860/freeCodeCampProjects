@@ -1,7 +1,7 @@
 # Practice Projects from freeCodeCamp
 
 ## General Information
-- Period : 2024-04-03 ~ 
+- Period : 2024-04-03 ~ 2024-04-16
 - Member : Jaeseong Park
 
 ## Skills
@@ -109,3 +109,6 @@
 ### [2024-04-15]
 - Finished Calculator Practice
 - Started Clock Practice
+
+### [2024-04-16]
+- Finished all project
